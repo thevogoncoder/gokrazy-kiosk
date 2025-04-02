@@ -30,7 +30,7 @@ func main() {
 		"--tty",
 		"--pull", "missing",
 		"--device", "/dev/console",
-		"--device", "/dev/dri",
+//		"--device", "/dev/dri",
 		"--device", "/dev/fb0",
 		"--device", "/dev/tty",
 		"--device", "/dev/tty1",
