@@ -30,13 +30,14 @@ func main() {
 		"--tty",
 		"--pull", "missing",
 		"--device", "/dev/console",
-//		"--device", "/dev/dri",
+//		"--device", "/dev/dri", // dont use gpu
 		"--device", "/dev/fb0",
 		"--device", "/dev/tty",
 		"--device", "/dev/tty1",
 		"--device", "/dev/vga_arbiter",
-//		"--device", "/dev/snd",
+//		"--device", "/dev/snd", // dont use sound
 		"--cap-add", "SYS_TTY_CONFIG",
+		"--network=host", // use host networking (tailscale)
 	}
 
 	runArgs, gokrazyArgs := mergeArgs(defaultArgs, os.Args)
