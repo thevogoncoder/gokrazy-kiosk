@@ -35,7 +35,7 @@ func main() {
 		"--device", "/dev/tty",
 		"--device", "/dev/tty1",
 		"--device", "/dev/vga_arbiter",
-		"--device", "/dev/snd",
+//		"--device", "/dev/snd",
 		"--cap-add", "SYS_TTY_CONFIG",
 	}
 
